@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 112: multiple at clauses are prohibited.
+    show joe at Transform(xsize=691, ysize=811) at right
+                                                  ^
+
+File "game/script.rpy", line 114: multiple at clauses are prohibited.
+    show tmp at Transform(xsize=691, ysize=811) at left
+                                                  ^
+
+Ren'Py Version: Ren'Py 8.3.6.25022803
+Sat Mar 15 01:19:54 2025

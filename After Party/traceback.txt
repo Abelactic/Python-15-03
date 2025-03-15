@@ -1,0 +1,38 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 27, in script call
+    call salir_sala  # Avanza en la historia
+  File "game/script.rpy", line 123, in script
+    show pie at Transform(xsize=691, ysize=811, xalign=0.5, yalign=0.5, opacity=0.3)
+  File "game/script.rpy", line 123, in <module>
+    show pie at Transform(xsize=691, ysize=811, xalign=0.5, yalign=0.5, opacity=0.3)
+Exception: Unknown transform property: 'opacity'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 27, in script call
+    call salir_sala  # Avanza en la historia
+  File "game/script.rpy", line 123, in script
+    show pie at Transform(xsize=691, ysize=811, xalign=0.5, yalign=0.5, opacity=0.3)
+  File "C:\Users\abrah\OneDrive\Documentos\RenPy\renpy-8.3.6-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\abrah\OneDrive\Documentos\RenPy\renpy-8.3.6-sdk\renpy\ast.py", line 1083, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\abrah\OneDrive\Documentos\RenPy\renpy-8.3.6-sdk\renpy\ast.py", line 1083, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\abrah\OneDrive\Documentos\RenPy\renpy-8.3.6-sdk\renpy\python.py", line 1215, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\abrah\OneDrive\Documentos\RenPy\renpy-8.3.6-sdk\renpy\python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 123, in <module>
+    show pie at Transform(xsize=691, ysize=811, xalign=0.5, yalign=0.5, opacity=0.3)
+  File "C:\Users\abrah\OneDrive\Documentos\RenPy\renpy-8.3.6-sdk\renpy\display\transform.py", line 745, in __init__
+    raise Exception("Unknown transform property: %r" % k)
+Exception: Unknown transform property: 'opacity'
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.6.25022803
+After Party 1.0
+Sat Mar 15 01:32:09 2025
