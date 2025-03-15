@@ -21,15 +21,15 @@ label start:
         menu:
             "Explorar baño":
                 call exploracion_wc
-                jump menu_baño  # Regresa al menú después de explorar
+                jump menu_baño  
 
             "Revisar celular":
                 call celular
-                jump menu_baño  # Regresa al menú después de revisar el celular
+                jump menu_baño  
 
             "Salir del baño":
-                call salir_sala  # Avanza en la historia
-                return  # Termina la escena
+                call salir_sala  
+                return  
 
     return
 
@@ -112,11 +112,10 @@ label continuar_historia:
     joe "Oye Mike, de casualidad, ¿tú sabes programar en Python? Necesito ayuda con un código de programación."
     jugador "No, pero creo que conozco a un sujeto."
 
-    # Mueve a Joe a la derecha y muestra a Pie a la izquierda
-    hide joe  # Esconde a Joe para cambiar su posición
-    # Mueve a Joe a la derecha (xalign=1.0)
+    hide joe  
+    
     show joe at Transform(xsize=691, ysize=811, xalign=1.0, yalign=0.5)
-    # Mueve a Pie a la izquierda (xalign=0.0)
+    
     show tm3 at Transform(xsize=691, ysize=811, xalign=0.0, yalign=0.5)
 
     pie "¡¿QUÉ PASA AQUÍ?!"
